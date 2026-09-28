@@ -1,0 +1,6 @@
+require("yvnth.config.autocmds")
+require("yvnth.config.diagnostics").setup()
+require("yvnth.config.keybinds")
+require("yvnth.config.settings")
+require("yvnth.lsp")
+require("yvnth.plugins")
