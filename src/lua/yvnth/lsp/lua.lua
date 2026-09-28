@@ -1,0 +1,26 @@
+return function(capabilities)
+  vim.lsp.config("lua_ls", {
+    capabilities = capabilities,
+    settings = {
+      Lua = {
+        diagnostics = {
+          globals = { "vim" },
+        },
+        workspace = {
+          library = {
+            vim.fn.expand("$VIMRUNTIME/lua"),
+            vim.fn.expand("$XDG_CONFIG_HOME") .. "/nvim/lua",
+          },
+        },
+        format = {
+          enable = true,
+          defaultConfig = {
+            indent_style = "space",
+            indent_size = "2",
+            quote_style = "double",
+          },
+        },
+      },
+    },
+  })
+end
