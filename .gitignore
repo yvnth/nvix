@@ -1,0 +1,6 @@
+result
+result-*
+test*
+.devenv/
+.direnv/
+.DS_Store
